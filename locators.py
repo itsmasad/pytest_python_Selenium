@@ -7,9 +7,14 @@ from selenium.webdriver.support import expected_conditions as EC
 
 driver = webdriver.Chrome()
 
-driver.get("https://demoqa.com/")
+driver.get("https://www.google.com/")
+driver.maximize_window()
 
+WebDriverWait(driver, 5).until(
+    EC.presence_of_element_located((By.CLASS_NAME, "gLFyf"))
+)
 
+driver.find_element(By.CLASS_NAME, "gLFyf").click()
 
-time.sleep(5)
+time.sleep(10)
 driver.quit()

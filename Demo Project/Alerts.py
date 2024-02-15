@@ -21,6 +21,8 @@ driver.switch_to.alert.dismiss()
 
 driver.find_element(By.XPATH, "//*[@href='#Textbox']").click()
 driver.find_element(By.XPATH, "//*[@onclick='promptbox()']").click()
+text = driver.switch_to.alert.text
+print("Text coppied from alert: " + text)
 driver.switch_to.alert.send_keys("Asad")
 driver.switch_to.alert.accept()
 time.sleep(3)

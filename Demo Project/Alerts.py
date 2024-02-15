@@ -14,8 +14,16 @@ driver.find_element(By.ID, "OKTab").click()
 time.sleep(2)
 driver.switch_to.alert.accept()
 
+driver.find_element(By.XPATH, "//*[@href='#CancelTab']").click()
+driver.find_element(By.ID, 'CancelTab').click()
+time.sleep(2)
+driver.switch_to.alert.dismiss()
+
+driver.find_element(By.XPATH, "//*[@href='#Textbox']").click()
+driver.find_element(By.XPATH, "//*[@onclick='promptbox()']").click()
+driver.switch_to.alert.send_keys("Asad")
+driver.switch_to.alert.accept()
+time.sleep(3)
 
 
-
-time.sleep(5)
 driver.quit()

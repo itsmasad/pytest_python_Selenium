@@ -24,7 +24,11 @@ for win in window:
         driver.switch_to.window(win)
 
 driver.find_element(By.XPATH, "//*[contains(text(),'Downloads')]").click()
-time.sleep(6)
 
 driver.close()
+time.sleep(6)
 
+driver.switch_to.window(parent)
+
+driver.find_element(By.XPATH, "//button[contains(text(),' click ')]").click()
+driver.quit()

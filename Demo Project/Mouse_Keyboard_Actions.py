@@ -7,20 +7,24 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver import ActionChains
 
 driver = webdriver.Chrome()
-website = "https://magento.softwaretestingboard.com/"
+website = "https://magento.softwaretestingboard.com/women.html"
 driver.get(website)
 driver.maximize_window()
 
+driver.implicitly_wait(5)
 # ActionChains - mouse movements, mouse button actions, keypress, and context menu interactions
 women = driver.find_element(By.XPATH, "//a[@id='ui-id-4']")
 women_top = driver.find_element(By.XPATH, "//a[@id='ui-id-9']")
 women_top_jacket = driver.find_element(By.XPATH, "//a[@id='ui-id-11']")
 
-
+# Creating Mouse Click Action Chain
 action = ActionChains(driver)
+# Hover on women
 action.move_to_element(women).perform()
+# Hover on Women > Top
 action.move_to_element(women_top).perform()
-action.click(women_top_jacket)
+# Clicking on Women > Top > Jacket using action click method
+action.click(women_top_jacket).perform()
 
 time.sleep(3)
 driver.quit()

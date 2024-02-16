@@ -34,5 +34,29 @@ search = driver.find_element(By.ID, "search")
 # Typing in Search, Pressing shift key, writing text, releasing shift key and then pressing enter.
 action.click(search).key_down(Keys.SHIFT).send_keys("asad is my name").key_up(Keys.SHIFT).send_keys(Keys.ENTER).perform()
 
+# Back to the previous page
+driver.back()
+driver.implicitly_wait(3)
+
+
+# Scrolling down with selenium actionchain
+action.send_keys(Keys.PAGE_DOWN).send_keys(Keys.PAGE_DOWN).perform
+
+time.sleep(3)
+
+# Scrolling up with selenium actionchain
+action.send_keys(Keys.PAGE_UP).perform()
+
+time.sleep(3)
+
+# Scrolling down using java script mathod
+driver.execute_script("window.scrollBy(0, 600);")
+
+time.sleep(3)
+
+# Scrolling up using java script mathod
+driver.execute_script("window.scrollBy(0, -600);")
+
+
 time.sleep(3)
 driver.quit()

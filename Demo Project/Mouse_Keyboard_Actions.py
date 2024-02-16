@@ -26,5 +26,13 @@ action.move_to_element(women_top).perform()
 # Clicking on Women > Top > Jacket using action click method
 action.click(women_top_jacket).perform()
 
+driver.implicitly_wait(3)
+
+# Initializing the element
+search = driver.find_element(By.ID, "search")
+
+# Typing in Search, Pressing shift key, writing text, releasing shift key and then pressing enter.
+action.click(search).key_down(Keys.SHIFT).send_keys("asad is my name").key_up(Keys.SHIFT).send_keys(Keys.ENTER).perform()
+
 time.sleep(3)
 driver.quit()

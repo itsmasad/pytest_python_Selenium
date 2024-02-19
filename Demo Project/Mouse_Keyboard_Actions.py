@@ -57,6 +57,6 @@ time.sleep(3)
 # Scrolling up using java script mathod
 driver.execute_script("window.scrollBy(0, -600);")
 
-
+# Sleep
 time.sleep(3)
 driver.quit()

@@ -26,9 +26,14 @@ for ele in checkbox:
     # if val == "Cricket":
     #     ele.click()
 
-multiselect = driver.find_element(By.CSS_SELECTOR, "li.ng-scope")
-sel_multi = Select(multiselect)
-sel_multi.select_by_index(3)
+# Language Selection
+dropdown = driver.find_element(By.ID, "msdd")
+languages = driver.find_elements(By.CSS_SELECTOR, "li.ng-scope a")
+
+dropdown.click()
+for one in languages:
+    one.click()
+time.sleep(0.5)
 
 time.sleep(5)
 # Selecting value from drop down

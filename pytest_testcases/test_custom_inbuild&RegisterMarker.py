@@ -2,6 +2,9 @@ import pytest
 
 
 # Custom Marker
+@pytest.mark.login
+@pytest.mark.sanity
+
 @pytest.mark.regression
 def test_regression():
     print("Test 1")

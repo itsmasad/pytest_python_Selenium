@@ -1,0 +1,11 @@
+# To install pytest
+pip install pytest
+
+# To check the pytest version
+pytest --version
+
+# This will run the pytest
+pytest
+
+# This will run all the test that don't have regression in their marker
+pytest -m "not regression"

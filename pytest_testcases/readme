@@ -9,3 +9,9 @@ pytest
 
 # This will run all the test that don't have regression in their marker
 pytest -m "not regression"
+
+# This will run all the test that have regression in their marker
+pytest -m "regression"
+
+# This will give extra details of the tests
+pytest -v

@@ -7,6 +7,9 @@ pytest --version
 # This will run the pytest
 pytest
 
+# use this to autouse the fixture before every test case
+autouse=True
+
 # -m will run all the marker test cases (use the keyword after -m to run those markers)
 pytest -m sanity
 
@@ -41,3 +44,10 @@ pytest -m "regression or sanity" -v
 # package: the fixture is destroyed during teardown of the last test in the package.
 
 # session: the fixture is destroyed at the end of the test session.
+
+# Topics
+Fixture, Module, Custom marker, Buildin Marker, -v, -m, conftest.py file, yield,
+
+Function(function is defaul if not any scop is set): 1. fixture and yield will be run before and after every single test.
+
+Session scop: 1. first fixture will be run, 2.  then all the test cases, 3. then yield.

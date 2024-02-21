@@ -7,6 +7,12 @@ pytest --version
 # This will run the pytest
 pytest
 
+# -m will run all the marker test cases (use the keyword after -m to run those markers)
+pytest -m sanity
+
+# To run the all test cases which has "log" in their function
+pytest -vsk Log  "c:/Users/Asad/Desktop/Selenium Projects/pytest/test_math.py"
+
 # This will run all the test that don't have regression in their marker
 pytest -m "not regression"
 

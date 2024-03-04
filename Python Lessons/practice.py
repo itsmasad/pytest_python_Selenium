@@ -18,15 +18,45 @@ print(x,y,z,a)
 print(f"These are the variables {x,y,z,a}")
 
 # tuple & sets
-fruits = ('mango','banana','orange')
-fruits1 = {'mango','banana','orange'}
+fruits = ('mango','banana','orange') # Tuple
+fruits1 = {'mango','banana','orange'} # Set
 print(type(fruits),type(fruits1))
 
 # Loops
-# for i in range(6):
-#     print('* '*i)
+for i in range(6):
+    print('* '*i)
 
 count = 5
 for i in range(count):
     limit = count - i
     print('* ' * limit)
+
+digit = 5
+for i in range(digit):
+    updated_digit = digit - i
+    print(updated_digit * ' ', i * '*')
+
+i = 0
+while i <= 10:
+    print(i)
+    i += 1
+
+# Dictionary
+dictionary = {
+    'Name' : 'Asad',
+    'Age' : '30',
+    'Designation' : 'SQA'
+}
+
+keys = ['Name','Age','Designation']
+for key in keys:
+    if key == 'Age':
+        continue
+    print(dictionary[key])
+
+# Function
+def stars():
+    print('This is a function')
+
+stars() # Calling function
+

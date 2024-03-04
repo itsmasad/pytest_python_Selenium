@@ -59,4 +59,3 @@ def stars():
     print('This is a function')
 
 stars() # Calling function
-

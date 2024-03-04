@@ -8,19 +8,20 @@
 # but it is widely adopted and recommended for clarity.
 
 
-# class faculty:
-#     def putdata(self):
-#         self.id=int((input("Enter Faculty ID")))
-#         self.name=input("Enter Name")
-#         self.salary=float(input("Enter Salary"))
-#     def display(self):
-#         print(f'Faculty ID : {self.id}')
-#         print(f'Faculty Name :{self.name}')
-#         print(f'Faculty Salary : {self.salary}')
 
-# a = faculty()
-# a.putdata()
-# a.display()
+class faculty:
+    def putdata(self):
+        self.id=int((input("Enter Faculty ID")))
+        self.name=input("Enter Name")
+        self.salary=float(input("Enter Salary"))
+    def display(self):
+        print(f'Faculty ID : {self.id}')
+        print(f'Faculty Name :{self.name}')
+        print(f'Faculty Salary : {self.salary}')
+
+a = faculty()
+a.putdata()
+a.display()
 
 
 
@@ -37,3 +38,18 @@ class faculty:
 a = faculty()
 # Here we don't need to call init, it will run automatically when an object is called or created
 a.display()
+
+
+
+
+class MyClass:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+# Create an instance of MyClass
+obj = MyClass(10, 20)
+
+# Access the instance variables
+print(obj.x)  # Output: 10
+print(obj.y)  # Output: 20

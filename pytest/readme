@@ -51,3 +51,8 @@ Fixture, Module, Custom marker, Buildin Marker, -v, -m, conftest.py file, yield,
 Function(function is defaul if not any scop is defined): 1. fixture and yield will be run before and after every single test.
 
 Session scop: 1. first fixture will be run, 2.  then all the test cases, 3. then yield.
+
+
+# for following better understanding there should be these files
+pytest.ini = for markers information
+conftest.py for the main functionality

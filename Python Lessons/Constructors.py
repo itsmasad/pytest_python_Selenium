@@ -32,7 +32,7 @@ class faculty:
         self.salary=float(input("Enter Salary"))
     def display(self):
         print(f'Faculty ID : {self.id}')
-        print(f'Faculty Name :{self.name}')
+        print(f'Faculty Name : {self.name}')
         print(f'Faculty Salary : {self.salary}')
 
 a = faculty()
@@ -41,6 +41,7 @@ a.display()
 
 
 
+# Parameter passing
 
 class MyClass:
     def __init__(self, x, y):

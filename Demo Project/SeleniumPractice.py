@@ -6,11 +6,17 @@ from selenium.webdriver.support.ui import WebDriverWait, Select
 from selenium.webdriver.support import expected_conditions as EC
 
 driver = webdriver.Chrome()
-driver.get("https://google.com/")
+driver.get("https://www.google.com")
 driver.maximize_window()
 driver.implicitly_wait(3)
 
-driver.find_element(By.CLASS_NAME, "gLFyf").send_keys("Asad"+Keys.RETURN)
+time.sleep(3)
 
-time.sleep(5)
+def wait(by, selector):
+    return WebDriverWait(driver=5).until(
+        EC.presence_of_element_located((by,selector))
+    )
+
+wait(By.CLASS_NAME,"lksjfdlkjsdf")
+driver.find_element(By.CLASS_NAME,"lksjfdlkjsdf")
 driver.close()

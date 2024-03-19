@@ -8,7 +8,16 @@ class Employee:
     def showData(self):
         print(f'Emplyee name is {self.name} and id is {self.id}')
 
+# Inheriting everything which Employee have 
+class Programmer(Employee):
+    def showLanguage(self):
+        print('Default language is Python')
+
+# Calling Employee method directly
 e1 = Employee("Asad",200)
 e1.showData()
-e2 = Employee("Naveed",199)
-e2.showData()
+
+# Calling Employee method using Programmer to see if the inheritence is working
+e3 = Programmer("Hadi",150)
+e3.showData()
+e3.showLanguage()

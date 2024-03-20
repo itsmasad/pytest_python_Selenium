@@ -50,6 +50,8 @@ autouse=True (will run the fixture automatically, you don't have to call it in e
 function = before each (it will run before the each test)
 class = before (it will run only once before the test)
 session = before all the classes (it will run before all the classes)
+To add finalizer
+write "request.addfinalizer("Mothed name you want to call at the finalizer")
 
 
 # Topics

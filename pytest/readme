@@ -49,6 +49,8 @@ simple words
 autouse=True (will run the fixture automatically, you don't have to call it in every test)
 function = before each (it will run before the each test)
 class = before (it will run only once before the test)
+session = before all the classes (it will run before all the classes)
+
 
 # Topics
 Fixture, Module, Custom marker, Buildin Marker, -v, -m, conftest.py file, yield,

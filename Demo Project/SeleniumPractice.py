@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait, Select
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver import ActionChains
 
 driver = webdriver.Chrome()
 driver.get("https://www.google.com")
@@ -21,6 +22,9 @@ def wait(by, selector):
         EC.presence_of_element_located((by,selector))
     )
 
-wait(By.CLASS_NAME,"lksjfdlkjsdf")
-driver.find_element(By.CLASS_NAME,"lksjfdlkjsdf")
+wait(By.CLASS_NAME,"gLFyf")
+search = driver.find_element(By.CLASS_NAME,"gLFyf")
+action = ActionChains(driver)
+action.click(search).send_keys("MuhammadAsad").perform()
+time.sleep(10)
 driver.close()

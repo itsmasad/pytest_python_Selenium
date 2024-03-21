@@ -7,10 +7,12 @@ from selenium.webdriver.support.ui import WebDriverWait, Select
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver import ActionChains
 
-def wait(by,locator):
-    return WebDriverWait(driver=5).until(
-        EC.presence_of_element_located((by, locator))
+driver = webdriver.Chrome()
+def wait(by, selector):
+    return WebDriverWait(driver, 5).until(
+        EC.presence_of_element_located((by,selector))
     )
+
 
 
 @pytest.fixture(scope="class",autouse=True)

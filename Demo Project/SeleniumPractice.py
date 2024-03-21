@@ -12,8 +12,12 @@ driver.implicitly_wait(3)
 
 time.sleep(3)
 
+print(driver.title)
+print(driver.current_url)
+
+
 def wait(by, selector):
-    return WebDriverWait(driver=5).until(
+    return WebDriverWait(driver, 5).until(
         EC.presence_of_element_located((by,selector))
     )
 

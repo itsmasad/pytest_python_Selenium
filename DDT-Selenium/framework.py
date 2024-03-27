@@ -3,12 +3,12 @@ import time
 from selenium import webdriver
 from openpyxl import load_workbook
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 
-@pytest.fixture(scope="function")
+@pytest.fixture(scope="session")
 def browser():
     driver = webdriver.Chrome()
     yield driver
-    time.sleep(5)
     driver.quit()
 
 # @pytest.fixture(scope="module")
@@ -29,22 +29,31 @@ def test_data():
 def test_excel_actions(browser, action, data, locator, locator_type):
     if action == "Navigate":
         browser.get(data)
-        time.sleep(5)
+        time.sleep(2)
     elif action == "Click":
         if locator_type == "class":
             element = browser.find_element(By.CLASS_NAME, locator)
             element.click()
-            time.sleep(5)
+            time.sleep(2)
         elif locator_type == "xpath":
             element = browser.find_element(By.XPATH, locator)
             element.click()
-            time.sleep(5)
+            time.sleep(2)
     elif action == "Type":
         if locator_type == "class":
             element = browser.find_element(By.CLASS_NAME, locator)
             element.send_keys(data)
-            time.sleep(5)
+            time.sleep(2)
         elif locator_type == "xpath":
             element = browser.find_element(By.XPATH, locator)
             element.send_keys(data)
-            time.sleep(5)
+            time.sleep(2)
+    elif action == "Enter":  # Check if action is "Enter"
+        if locator_type == "class":
+            element = browser.find_element(By.CLASS_NAME, locator)
+            element.send_keys(Keys.ENTER)
+            time.sleep(2)
+        elif locator_type == "xpath":
+            element = browser.find_element(By.XPATH, locator)
+            element.send_keys(Keys.ENTER)
+            time.sleep(2)

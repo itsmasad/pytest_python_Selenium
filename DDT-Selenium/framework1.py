@@ -3,17 +3,17 @@ import time
 from selenium import webdriver
 from openpyxl import load_workbook
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 
-@pytest.fixture(scope="function")
+@pytest.fixture(scope="session")
 def browser():
     driver = webdriver.Chrome()
     yield driver
-    time.sleep(5)
     driver.quit()
 
 # @pytest.fixture(scope="module")
 def test_data():
-    workbook = load_workbook(filename="DDT-Selenium\\exelsheet\\TestCasesFramework.xlsx")
+    workbook = load_workbook(filename="DDT-Selenium\\exelsheet\\TestCasesFramework2.xlsx")
     sheet = workbook.active
     data = []
     for row in sheet.iter_rows(min_row=2, min_col=3, max_col=6, values_only=True):
@@ -27,25 +27,45 @@ def test_data():
 
 @pytest.mark.parametrize("action, data, locator, locator_type", test_data())
 def test_excel_actions(browser, action, data, locator, locator_type):
-    for act, dat, loc, loc_type in zip(action, data, locator, locator_type):
-        if act == "Navigate":
-            browser.get(dat)
-            time.sleep(5)
-        elif act == "Click":
-            if loc_type == "class":
-                element = browser.find_element(By.CLASS_NAME, loc)
-                element.click()
-                time.sleep(5)
-            elif loc_type == "xpath":
-                element = browser.find_element(By.XPATH, loc)
-                element.click()
-                time.sleep(5)
-        elif act == "Type":
-            if loc_type == "class":
-                element = browser.find_element(By.CLASS_NAME, loc)
-                element.send_keys(dat)
-                time.sleep(5)
-            elif loc_type == "xpath":
-                element = browser.find_element(By.XPATH, loc)
-                element.send_keys(dat)
-                time.sleep(5)
+    if action == "Navigate":
+        browser.get(data)
+        time.sleep(2)
+    elif action == "Click":
+        if locator_type == "class":
+            element = browser.find_element(By.CLASS_NAME, locator)
+            element.click()
+            time.sleep(2)
+        elif locator_type == "xpath":
+            element = browser.find_element(By.XPATH, locator)
+            element.click()
+            time.sleep(2)
+        elif locator_type == "id":
+            element = browser.find_element(By.ID, locator)
+            element.click()
+            time.sleep(2)
+    elif action == "Type":
+        if locator_type == "class":
+            element = browser.find_element(By.CLASS_NAME, locator)
+            element.send_keys(data)
+            time.sleep(2)
+        elif locator_type == "xpath":
+            element = browser.find_element(By.XPATH, locator)
+            element.send_keys(data)
+            time.sleep(2)
+        elif locator_type == "id":
+            element = browser.find_element(By.ID, locator)
+            element.send_keys(data)
+            time.sleep(2)
+    elif action == "Enter":  # Check if action is "Enter"
+        if locator_type == "class":
+            element = browser.find_element(By.CLASS_NAME, locator)
+            element.send_keys(Keys.ENTER)
+            time.sleep(2)
+        elif locator_type == "xpath":
+            element = browser.find_element(By.XPATH, locator)
+            element.send_keys(Keys.ENTER)
+            time.sleep(2)
+        elif locator_type == "id":
+            element = browser.find_element(By.ID, locator)
+            element.send_keys(Keys.ENTER)
+            time.sleep(2)

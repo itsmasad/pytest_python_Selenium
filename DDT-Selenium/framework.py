@@ -5,16 +5,16 @@ from selenium.webdriver.common.by import By
 
 @pytest.fixture(scope="module")
 def browser():
-    driver = webdriver.Chrome(executable_path="path_to_chromedriver")
+    driver = webdriver.Chrome()
     yield driver
     driver.quit()
 
 @pytest.fixture(scope="module")
 def test_data():
-    workbook = load_workbook("C:\\Users\\Asad\\Desktop\\Selenium Projects\\DDT-Selenium\\excelsheet\\TestCasesFramework.xlsx")
+    workbook = load_workbook(filename="DDT-Selenium\\exelsheet\\TestCasesFramework.xlsx")
     sheet = workbook.active
     data = []
-    for row in sheet.iter_rows(values_only=True):
+    for row in sheet.iter_rows(min_row=2, values_only=True):  # Assuming the data starts from row 2
         data.append(row)
     workbook.close()
     return data

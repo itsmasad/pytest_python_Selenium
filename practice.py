@@ -52,5 +52,5 @@ action.context_click(element).perform()
 action.move_to_element(element).perform()
 action.click(element).send_keys("Whatever you want to type").perform()
 action.drag_and_drop(element,element2).perform
-
+driver.switch_to.window()
 

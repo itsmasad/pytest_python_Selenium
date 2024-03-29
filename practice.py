@@ -39,3 +39,18 @@ def test_data():
 @pytest.mark.parametrize("username,password",test_data())
 def test_Login(username,password):
     print(username,password)
+
+from selenium import webdriver
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait, Select
+driver = webdriver.Chrome()
+element = driver.find_element(By.CLASS_NAME,"Class")
+element2 = driver.find_element(By.XPATH,"Xpath")
+action = ActionChains(driver)
+action.context_click(element).perform()
+action.move_to_element(element).perform()
+action.click(element).send_keys("Whatever you want to type").perform()
+action.drag_and_drop(element,element2).perform
+
+

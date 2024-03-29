@@ -12,11 +12,11 @@ driver.maximize_window()
 
 
 # Using Index
-driver.switch_to.frame(0)
+# driver.switch_to.frame(0)
 
 # Using Name or ID (this is a overloading concept, you can use the ID or Name either)
-driver.switch_to.frame("singleframe") #ID
-driver.switch_to.frame("SingleFrame") #Name
+# driver.switch_to.frame("singleframe") #ID
+# driver.switch_to.frame("SingleFrame") #Name
 
 # Using Web Element"
 single_frame = driver.find_element(By.XPATH, "//div[@id='Single']/iframe")

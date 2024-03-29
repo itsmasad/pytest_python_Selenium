@@ -80,4 +80,4 @@ print(lower_Case.upper())
 # To Title case
 print(lower_Case.title())
 # To camle case
-print(lower_Case.())
+print(lower_Case.capitalize())

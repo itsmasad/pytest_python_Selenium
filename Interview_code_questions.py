@@ -133,13 +133,13 @@
 # print(new_list)
 
 # checking how many times the alphbet is there
-mystr = 'a,a,a,b,b,c,c,c'
-stringtolist = mystr.split(",")
-new_list = []
-visited = []
-for i in stringtolist:
-    if i not in visited:
-        visited.append(i)
-        new_list.append(f'{stringtolist.count(i)}:{i}')
+# mystr = 'a,a,a,b,b,c,c,c'
+# stringtolist = mystr.split(",")
+# new_list = []
+# visited = []
+# for i in stringtolist:
+#     if i not in visited:
+#         visited.append(i)
+#         new_list.append(f'{stringtolist.count(i)}:{i}')
 
-print(new_list)
+# print(new_list)

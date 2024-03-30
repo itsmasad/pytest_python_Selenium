@@ -30,7 +30,6 @@ wait_for_element( 5, By.PARTIAL_LINK_TEXT, "MuhammadAsad")
 
 driver.find_element(By.PARTIAL_LINK_TEXT, "MuhammadAsad").click()
 
-
 wait_for_element( 5, By.CSS_SELECTOR, "button[id=onetrust-accept-btn-handler]")
 
 driver.find_element(By.CSS_SELECTOR, "button[id=onetrust-accept-btn-handler]").click()

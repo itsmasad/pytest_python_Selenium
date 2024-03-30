@@ -72,12 +72,30 @@
 
 
 
-lower_Case = "my name is asad and i am a software engineer"
-# To lower case
-print(lower_Case.lower())
-# To upper case
-print(lower_Case.upper())
-# To Title case
-print(lower_Case.title())
-# To camle case
-print(lower_Case.capitalize())
+# lower_Case = "my name is asad and i am a software engineer"
+# # To lower case
+# print(lower_Case.lower())
+# # To upper case
+# print(lower_Case.upper())
+# # To Title case
+# print(lower_Case.title())
+# # To camle case
+# print(lower_Case.capitalize())
+
+
+
+# Checkin the dublicate alphabets
+def check_dublication(input_value):
+    seen = set()
+    dublicate = set()
+
+    for char in input_value.lower():
+        if char.isalpha():
+            if char in seen:
+                dublicate.add(char.upper())
+            else:
+                seen.add(char)
+    return dublicate
+
+input_value = "Abcdad"
+print(check_dublication(input_value))

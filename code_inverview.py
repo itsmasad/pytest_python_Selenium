@@ -132,7 +132,11 @@
 
 # print(new_list)
 
-mystr = "a,a,a,b,b,c,c,cc"
-strtolist = mystr.split()
-for i in strtolist:
-    print(f'{i}  ')
+mystr = 'a,a,a,b,b,c,c,c'
+stringtolist = mystr.split(",")
+new_dic = {}
+visited = []
+for i in stringtolist:
+    if i not in visited:
+        visited.append(i)
+        print(stringtolist.count(i),i)

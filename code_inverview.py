@@ -85,17 +85,54 @@
 
 
 # Checkin the dublicate alphabets
-def check_dublication(input_value):
-    seen = set()
-    dublicate = set()
+# def check_dublication(input_value):
+#     seen = set()
+#     dublicate = set()
 
-    for char in input_value.lower():
-        if char.isalpha():
-            if char in seen:
-                dublicate.add(char.upper())
-            else:
-                seen.add(char)
-    return dublicate
+#     for char in input_value.lower():
+#         if char.isalpha():
+#             if char in seen:
+#                 dublicate.add(char.upper())
+#             else:
+#                 seen.add(char)
+#     return dublicate
 
-input_value = "Abcdad"
-print(check_dublication(input_value))
+# input_value = "Abcdad"
+# print(check_dublication(input_value))
+
+# Move 0 to end of the lis
+# list_number = [0,1,2,3,0,4,0,5,6]
+
+# for i in list_number:
+#     if i == 0:
+#         list_number.remove(i)
+#         list_number.append(i)
+    
+# print(list_number)
+
+# Reversing the alphabets
+# def reverse_words(input):
+#     # converting the string to list by spliting
+#     word = input.split()
+#     # reversing the list order
+#     reverse = word[::-1]
+#     # converting the list to string again
+#     new_string = ' '.join(reverse)
+#     # printing the new string
+#     print(new_string)
+
+# reverse_words("sky is blue")
+
+# if there is number only one time in the list print this
+# list = [1,2,2,2,3,3,3,4,5,5,6,6,7]
+# new_list = []
+# for num in list:
+#     if list.count(num)==1:
+#         new_list.append(num)
+
+# print(new_list)
+
+mystr = "a,a,a,b,b,c,c,cc"
+strtolist = mystr.split()
+for i in strtolist:
+    print(f'{i}  ')

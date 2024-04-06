@@ -143,3 +143,19 @@
 #         new_list.append(f'{stringtolist.count(i)}:{i}')
 
 # print(new_list)
+
+# integer = 29
+# # converting integer to integer list
+# integer_list = list(str(integer))
+# # map(int, integer_list) converts each element of the list into an integer.
+# result = map(int, integer_list)
+# # getting the sum of the number
+# print(sum(result))
+
+def getting_sum(input):
+    two_digit = list(str(input))
+    digit_1 = []
+    digit_2 = []
+    for i in two_digit:
+        print(i)
+getting_sum(29)

@@ -145,9 +145,47 @@
 # print(new_list)
 
 # integer = 29
-# # converting integer to integer list
+# 
 # integer_list = list(str(integer))
-# # map(int, integer_list) converts each element of the list into an integer.
+# 
 # result = map(int, integer_list)
 # # getting the sum of the number
 # print(sum(result))
+
+# def solution(n):
+#     # converting integer to integer list
+#     integer_list = list(str(n))
+#     # map(int, integer_list) converts each element of the list into an integer.
+#     result = map(int, integer_list)
+#     total = sum(result)
+#     return total
+
+# result = solution(29)
+# assert result == 11, "result is not as expected"
+
+# def piramid(n):
+#     for i in range(1,n +1):
+#         space = (n-i)*' '
+#         asterisk = '*'*(i*2-1)
+#         print(space, asterisk)
+
+# piramid(5)
+
+# it will get the value from the left for array a, and from the right for value b
+# then concatinating them and comparing if the value is less or greater then variable k
+# a = [1,2,3]
+# b = [1,2,3]
+# k = 31
+# def solution(a,b,k):
+#     count = 0
+#     for value_1,value_2 in zip(a, reversed(b)):
+#         concatinated_Value = str(value_1) + str(value_2)
+#         if int(concatinated_Value) < 31:
+#             print(f'{concatinated_Value} is less than {k}')
+#             count += 1
+#             # print(i)
+#         else:
+#             print(f'{concatinated_Value} is not less than {k}')
+#     print(count)
+
+# solution(a,b,k)

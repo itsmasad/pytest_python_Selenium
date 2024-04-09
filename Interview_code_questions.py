@@ -204,3 +204,23 @@
         
 # result = check_palindrome("Noon")
 # print(result)
+
+# # Fibonacci Series
+# fabonacci = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+
+# def check_fab(input):
+#     # loop for checking the fabonacci list
+#     for i in range(0,len(input)-2):
+#         # adding first two digits
+#         added = input[i] + input[i+1]
+#         # Comparing first two digits to the 3rd one
+#         next_num = input[i+2]
+#         if added == next_num:
+#             return True
+#         else:
+#             return False
+            
+
+# result = check_fab(fabonacci)
+# print(result)
+# assert True

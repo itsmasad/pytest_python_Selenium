@@ -152,6 +152,7 @@
 # # getting the sum of the number
 # print(sum(result))
 
+# # get the sum of two ingiter
 # def solution(n):
 #     # converting integer to integer list
 #     integer_list = list(str(n))
@@ -189,3 +190,17 @@
 #     print(count)
 
 # solution(a,b,k)
+
+# # Checking palindrome 
+# def check_palindrome(input):
+#     # Remove non-alphanumeric characters and convert to lowercase
+#     clean_input = ''.join(c.lower() for c in input if c.isalnum())
+#     # Check if the cleaned input is equal to its reverse
+#     palindrome = clean_input[::-1]
+#     if palindrome == clean_input:
+#         return "This is palindrome"
+#     else:
+#         return "This is not a palindrome"
+        
+# result = check_palindrome("Noon")
+# print(result)

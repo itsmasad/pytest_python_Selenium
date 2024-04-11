@@ -224,3 +224,22 @@
 # result = check_fab(fabonacci)
 # print(result)
 # assert True
+
+# # Factorial Calculation
+# # Check the factorial of 7
+# Examples :
+# Factorial of 6:
+# 6! = 6 × 5 × 4 × 3 × 2 × 1 = 720
+# ----------------------------------
+# Factorial of 7:
+# 7! = 7 × 6 × 5 × 4 × 3 × 2 × 1 = 5040
+# --------------------------------------
+# def solution(n):
+#     result = 1
+#     for i in range(1,n+1):
+#         result *= i
+#     return result
+        
+    
+# result = solution(7)
+# print(result)

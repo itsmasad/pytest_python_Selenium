@@ -243,3 +243,17 @@
     
 # result = solution(7)
 # print(result)
+
+# concatinating list and string together
+
+a = [1,2,3]
+b = "1,2,3"
+def solution(a,b):
+    clean_string = b.replace(',','')
+    clean_string_to_list = list(map(int,clean_string))
+    new_list = a + clean_string_to_list
+    return new_list
+
+
+result = solution(a,b)
+print(result)

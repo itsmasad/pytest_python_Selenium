@@ -257,3 +257,13 @@
 
 # result = solution(a,b)
 # print(result)
+
+# if the value of the array is equal to its index print this
+# arr = [3,3,5,7,2,5,3]
+
+# def solution(n):
+#     for a,b in enumerate(n):
+#         if a == b:
+#             print(b)
+
+# solution(arr)

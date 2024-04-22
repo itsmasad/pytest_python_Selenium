@@ -267,3 +267,13 @@
 #             print(b)
 
 # solution(arr)
+
+# Another way of doing this
+# arr = [3,3,5,7,2,5,3]
+
+# def solution(n):
+#         for i in range(0,len(n)):
+#             if i == n[i]:
+#                 print(n[i])
+
+# solution(arr)

@@ -36,7 +36,6 @@
 #     print("not an anagram")
 
 
-
 # import pytest
 
 # @pytest.fixture(scope="function")
@@ -124,13 +123,24 @@
 # reverse_words("sky is blue")
 
 # if there is number only one time in the list print this
-# list = [1,2,2,2,3,3,3,4,5,5,6,6,7]
+# Original list with duplicate and unique elements
+# list = [1, 2, 2, 2, 3, 3, 3, 4, 5, 5, 6, 6, 7]
+
+# # Initialize an empty list to store elements that occur only once
 # new_list = []
+
+# # Iterate through each element in the original list
 # for num in list:
-#     if list.count(num)==1:
+#     # Check how many times the current element appears in the original list
+#     if list.count(num) == 1:
+#         # If the count is 1, it means the element occurs only once
+#         # Append the element to the new_list
 #         new_list.append(num)
 
+# # Print the new_list containing elements that occur only once
 # print(new_list)
+
+
 
 # checking how many times the alphbet is there
 # mystr = 'a,a,a,b,b,c,c,c'

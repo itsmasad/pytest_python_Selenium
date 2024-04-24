@@ -155,12 +155,13 @@
 # print(new_list)
 
 # integer = 29
-# 
+
 # integer_list = list(str(integer))
-# 
+
 # result = map(int, integer_list)
 # # getting the sum of the number
 # print(sum(result))
+
 
 # # get the sum of two ingiter
 # def solution(n):

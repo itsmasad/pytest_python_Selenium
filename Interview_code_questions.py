@@ -288,3 +288,18 @@
 #                 print(n[i])
 
 # solution(arr)
+
+# To count how many upper and lower cases are there in a string
+
+# def solution(string):
+#     upper = []
+#     lower = []
+#     for i in string:
+#         if i.islower():
+#             lower.append(i)
+#         else:
+#             upper.append(i)
+#     return upper,lower
+
+# result = solution("AutomationIsmaAzing")
+# print(len(result[0]),len(result[1]),)

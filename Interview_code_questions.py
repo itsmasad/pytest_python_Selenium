@@ -303,3 +303,16 @@
 
 # result = solution("AutomationIsmaAzing")
 # print(len(result[0]),len(result[1]),)
+
+# find the first non-repeated character in a string
+string = "aavvdk"
+
+def solution(input):
+    for char in string:
+        if input.count(char) == 1:
+            print(char)
+            break
+
+solution(string)
+
+

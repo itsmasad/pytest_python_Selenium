@@ -23,6 +23,5 @@ def openfiledata():
     return zip(usernames, passwords)
 
 @pytest.mark.parametrize("username,password", openfiledata())
-def test_DDT(test_from_exel, 
-username, password):
+def test_DDT(test_from_exel, username, password):
     print(username, password)

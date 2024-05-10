@@ -1,6 +1,7 @@
 import sys
 from selenium import webdriver
 
+
 browser = sys.argv[1]  # Get browser type from command line argument
 
 if browser == "chrome":
@@ -14,3 +15,7 @@ elif browser == "edge":
 # Your test code here
 
 driver.quit()
+
+
+
+# to execute python file_name.py chrome

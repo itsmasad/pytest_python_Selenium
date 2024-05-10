@@ -317,6 +317,8 @@
 # solution(string)
 
 
+# To get the 5 consecutive number of any number, i.e. 850
+
 # def solution(n):
 #     verify = False  # Flag to check if a sequence is found
 #     for i in range(1, n+1):  # Iterate over possible starting points of sequences

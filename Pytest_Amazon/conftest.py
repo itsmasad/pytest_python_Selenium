@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 def setUp(request):
 
     # To run this code from command line browser specific you can use this command
-    pytest -k 
+    # pytest -v -s Pytest_Amazon\test_AmazonSearch.py -k "chrome"
 
     if request.param == "chrome":
         driver = webdriver.Chrome()

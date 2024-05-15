@@ -9,4 +9,5 @@ from selenium.webdriver.support import expected_conditions as EC
 def setUp():
     driver = webdriver.Chrome()
     yield driver
+    time.sleep(3)
     driver.close()

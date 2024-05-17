@@ -335,3 +335,42 @@
 #         print("No consecutive sequence found for", n)  # Print a message indicating no sequence was found
 
 # solution(851)
+
+
+# agar palindrom hai
+# jitny corrector hein us ka table pr ulta
+
+# agar nahi hai
+# jitny corrector hein ussy 5 se  multiply
+
+
+# string = "mo0om"
+
+# def solution(n):
+#     reversed_table = []
+#     low = n.lower()
+#     low_1 = low[::-1]
+#     if low == low_1:
+#         print("palindrom hai")
+#         table = len(n)
+#         for i in range(1,10+1):
+#             reversed_table.append(i*table)
+            
+#     else:
+#         print("palindrome nahi hai")
+#     for i in reversed(reversed_table):
+#         print(i)
+
+
+
+# solution(string)
+
+# Print every second value in the array
+# arr = ["a","b","c","d"]
+
+# for a,b in enumerate(arr):
+#     if a % 2 == 0:
+#         print(b)
+
+# Another way of doing this
+# print(arr[::2])

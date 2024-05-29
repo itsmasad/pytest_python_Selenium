@@ -374,3 +374,6 @@
 
 # Another way of doing this
 # print(arr[::2])
+
+
+

@@ -377,3 +377,87 @@
 
 
 
+# ------------------------------------------------------------------
+
+# # How to reverse int value without chaging its datatype
+# def solution(n):
+#     # Initialize 'new' to 0; this will store the result.
+#     new = 0
+    
+#     # Example initial value: n = 94574645
+#     # Loop as long as 'n' is greater than 0.
+#     while n > 0:
+#         # Get the last digit of 'n' by taking 'n' modulo 10.
+#         digit = n % 10  # digit = 5 (94574645 % 10)
+        
+#         # Shift the current digits in 'new' to the left by multiplying by 10
+#         # and add the new digit to the rightmost position.
+#         new = new * 10 + digit  # new = 0 * 10 + 5 = 5
+        
+#         # Remove the last digit from 'n' by doing integer division by 10.
+#         n = n // 10  # n = 94574645 // 10 = 9457464
+        
+#         # Current state:
+#         # new = 5, n = 9457464
+    
+#     # Next iteration:
+#     # digit = 9457464 % 10 = 4
+#     # new = 5 * 10 + 4 = 54
+#     # n = 9457464 // 10 = 945746
+#     # Current state:
+#     # new = 54, n = 945746
+    
+#     # Next iteration:
+#     # digit = 945746 % 10 = 6
+#     # new = 54 * 10 + 6 = 546
+#     # n = 945746 // 10 = 94574
+#     # Current state:
+#     # new = 546, n = 94574
+    
+#     # Next iteration:
+#     # digit = 94574 % 10 = 4
+#     # new = 546 * 10 + 4 = 5464
+#     # n = 94574 // 10 = 9457
+#     # Current state:
+#     # new = 5464, n = 9457
+    
+#     # Next iteration:
+#     # digit = 9457 % 10 = 7
+#     # new = 5464 * 10 + 7 = 54647
+#     # n = 9457 // 10 = 945
+#     # Current state:
+#     # new = 54647, n = 945
+    
+#     # Next iteration:
+#     # digit = 945 % 10 = 5
+#     # new = 54647 * 10 + 5 = 546475
+#     # n = 945 // 10 = 94
+#     # Current state:
+#     # new = 546475, n = 94
+    
+#     # Next iteration:
+#     # digit = 94 % 10 = 4
+#     # new = 546475 * 10 + 4 = 5464754
+#     # n = 94 // 10 = 9
+#     # Current state:
+#     # new = 5464754, n = 9
+    
+#     # Next iteration:
+#     # digit = 9 % 10 = 9
+#     # new = 5464754 * 10 + 9 = 54647549
+#     # n = 9 // 10 = 0
+#     # Current state:
+#     # new = 54647549, n = 0
+    
+#     # Print the resulting integer, which is 'new'.
+#     print(new)  # Output: 54647549
+    
+#     # Print the type of 'new' to confirm it's an integer.
+#     print(type(new))  # Output: <class 'int'>
+
+# # Example usage: Call the solution function with the integer 94574645.
+# solution(94574645)
+
+# ------------------------------------------------------------------
+
+

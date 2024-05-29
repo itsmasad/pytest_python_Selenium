@@ -460,4 +460,18 @@
 
 # ------------------------------------------------------------------
 
+# This is how you can do it with for loop
 
+# var = 94574645
+# var2 = len(str(var))
+# new = 0
+
+# for i in range(1,var2+1):
+#     # Getting the last digit
+#     digit = var % 10
+#     # Adding the last digit to the new variable
+#     new = new * 10 + digit
+#     # Removing the last degit from original so we can get the 2nd last in the next iteration
+#     var = var // 10
+
+# print(new)

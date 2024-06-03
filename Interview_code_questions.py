@@ -304,6 +304,8 @@
 # result = solution("AutomationIsmaAzing")
 # print(len(result[0]),len(result[1]),)
 
+# -----------------------------------------------------
+
 # find the first non-repeated character in a string
 
 # string = "aavvdk"

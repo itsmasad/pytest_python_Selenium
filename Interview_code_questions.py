@@ -365,6 +365,8 @@
 
 # solution(string)
 
+# ---------------------------------------------
+
 # Print every second value in the array
 # arr = ["a","b","c","d"]
 

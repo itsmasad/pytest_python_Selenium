@@ -320,7 +320,6 @@
 
 # ----------------------------------------------------
 
-
 # To get the 5 consecutive number of any number, i.e. 850
 
 # def solution(n):
@@ -381,8 +380,6 @@
 
 # Another way of doing this
 # print(arr[::2])
-
-
 
 # ------------------------------------------------------------------
 

@@ -466,6 +466,7 @@
 
 # This is how you can do it with for loop
 
+
 # var = 94574645
 # var2 = len(str(var))
 # new = 0

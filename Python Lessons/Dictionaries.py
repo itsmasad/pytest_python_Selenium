@@ -9,7 +9,6 @@ person = {
 
 print(person, type(person))
 
-
 # User constructor
 person2 = dict(first_name='Muhammad',last_name='Asad',age=30)
 

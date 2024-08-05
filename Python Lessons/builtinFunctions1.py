@@ -24,6 +24,7 @@ print(string_upper.isupper())  # Output: True
 string_start = "Hello, world!"
 print(string_start.startswith("Hello"))  # Output: True
 
+
 # endswith(suffix): Checks if a string ends with the specified suffix
 string_end = "Hello, world!"
 print(string_end.endswith("world!"))  # Output: True

@@ -28,6 +28,5 @@ input_address.send_keys("This is my address")
 input_pAddress.send_keys("This is my perminent address")
 input_submit.click()
 
-
 time.sleep(5)
 driver.quit()

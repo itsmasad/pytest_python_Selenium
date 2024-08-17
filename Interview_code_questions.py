@@ -8,7 +8,6 @@
 # new_string = old_string[::-1]
 # print(new_string)
 
-
 # import random
 # # Random Numbers
 # random_number = random.randint(0,100)

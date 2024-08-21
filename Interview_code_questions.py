@@ -8,7 +8,6 @@
 # new_string = old_string[::-1]
 # print(new_string)
 
-
 # import random
 # # Random Numbers
 # random_number = random.randint(0,100)
@@ -465,7 +464,6 @@
 # ------------------------------------------------------------------
 
 # This is how you can do it with for loop
-
 
 # var = 94574645
 # var2 = len(str(var))

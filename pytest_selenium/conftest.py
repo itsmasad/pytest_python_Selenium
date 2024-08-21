@@ -14,7 +14,6 @@ def wait(by, selector):
     )
 
 
-
 @pytest.fixture(scope="class",autouse=True)
 def browser():
     driver = webdriver.Chrome()

@@ -40,7 +40,7 @@ driver.implicitly_wait(3)
 
 
 # Scrolling down with selenium actionchain
-action.send_keys(Keys.PAGE_DOWN).send_keys(Keys.PAGE_DOWN).perform
+action.send_keys(Keys.PAGE_DOWN).send_keys(Keys.PAGE_DOWN).perform()
 
 time.sleep(3)
 

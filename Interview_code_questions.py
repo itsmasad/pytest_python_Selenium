@@ -324,22 +324,53 @@
 
 # To get the 5 consecutive number of any number, i.e. 850
 
-# def solution(n):
-#     verify = False  # Flag to check if a sequence is found
-#     for i in range(1, n+1):  # Iterate over possible starting points of sequences
-#         count = 0  # Reset the sum of consecutive numbers for each starting point
-#         if not verify:  # If a sequence hasn't been found yet
-#             for b in range(i, i+5):  # Iterate over 5 consecutive numbers starting from i
-#                 count += b  # Add the current number to the sum
-#             if count == n:  # If the sum matches the target number
-#                 print(n)  # Print the target number
-#                 print(f'{i},{i+1},{i+2},{i+3},{i+4}')  # Print the consecutive sequence
-#                 verify = True  # Set the flag to indicate a sequence has been found
-#                 break  # Exit the inner loop since the sequence is found
-#     if not verify:  # If no sequence is found after checking all possible starting points
-#         print("No consecutive sequence found for", n)  # Print a message indicating no sequence was found
+def solution(n):
+    verify = False  # Flag to check if a sequence is found
+    for i in range(1, n+1):  # Iterate over possible starting points of sequences
+        count = 0  # Reset the sum of consecutive numbers for each starting point
+        if not verify:  # If a sequence hasn't been found yet
+            for b in range(i, i+5):  # Iterate over 5 consecutive numbers starting from i
+                count += b  # Add the current number to the sum
+            if count == n:  # If the sum matches the target number
+                print(n)  # Print the target number
+                print(f'{i},{i+1},{i+2},{i+3},{i+4}')  # Print the consecutive sequence
+                verify = True  # Set the flag to indicate a sequence has been found
+                break  # Exit the inner loop since the sequence is found
+    if not verify:  # If no sequence is found after checking all possible starting points
+        print("No consecutive sequence found for", n)  # Print a message indicating no sequence was found
 
-# solution(851)
+solution(851)
+
+# Another way of doing this
+
+# def solution(n):
+#     # Initialize a flag to check if a solution is found
+#     Verify = False
+    
+#     # List to hold the consecutive numbers
+#     numbers = []
+    
+#     # Loop through possible starting points for the consecutive numbers
+#     for i in range(1, n + 1):
+#         # Create a sequence of 5 consecutive numbers starting from i
+#         for b in range(i, i + 5):
+#             numbers.append(b)
+        
+#         # Check if the sum of these 5 numbers equals n
+#         if sum(map(int, numbers)) == n:
+#             # If the sum matches n, set Verify to True and print the numbers
+#             Verify = True
+#             print(numbers)
+#             break  # Exit the loop as the solution is found
+        
+#         # Clear the numbers list to check the next sequence
+#         numbers.clear()
+    
+#     # Print whether a valid sequence was found
+#     print(Verify)
+
+# # Example usage
+# solution(850)
 
 # ----------------------------------------------
 

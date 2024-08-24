@@ -156,13 +156,13 @@
 
 # get the sum of two ingiter
 
-integer = 29
+# integer = 29
 
-integer_list = list(str(integer))
+# integer_list = list(str(integer))
 
-result = map(int, integer_list)
-# getting the sum of the number
-print(sum(result))
+# result = map(int, integer_list)
+# # getting the sum of the number
+# print(sum(result))
 
 
 # # get the sum of two ingiter

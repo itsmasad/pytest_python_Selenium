@@ -1,4 +1,4 @@
-# A Tuple is a collection which is ordered and unchangeable. Allows duplicate memebers.
+# A Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
 
 # Create tuple
 fruits = ('Apples', 'Oranges', 'Grapes')
@@ -26,7 +26,7 @@ print(len(fruits))
 
 # A Set is a collection which is unordered and unindexed. No duplicate members.
 
-# Create set ( it is created with curly brases)
+# Create set ( it is created with curly braces)
 fruits_set = {'Apples', 'Bananas', 'Mangos'}
 
 # Check if in set

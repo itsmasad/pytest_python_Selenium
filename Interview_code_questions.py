@@ -9,9 +9,9 @@
 # print(new_string)
 
 # Random Numbers
-import random
-random_number = random.randint(0,100)
-print(random_number)
+# import random
+# random_number = random.randint(0,100)
+# print(random_number)
 
 # random_fload = random.random()
 # print(random_fload)

@@ -8,10 +8,10 @@
 # new_string = old_string[::-1]
 # print(new_string)
 
-# import random
-# # Random Numbers
-# random_number = random.randint(0,100)
-# print(random_number)
+# Random Numbers
+import random
+random_number = random.randint(0,100)
+print(random_number)
 
 # random_fload = random.random()
 # print(random_fload)

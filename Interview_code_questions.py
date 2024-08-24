@@ -238,8 +238,8 @@
 # print(result)
 # assert True
 
-# # Factorial Calculation
-# # Check the factorial of 7
+# Factorial Calculation
+# Check the factorial of 7
 # Examples :
 # Factorial of 6:
 # 6! = 6 × 5 × 4 × 3 × 2 × 1 = 720

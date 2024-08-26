@@ -142,6 +142,7 @@
 
 
 # checking how many times the alphbet is there
+
 # mystr = 'a,a,a,b,b,c,c,c'
 # stringtolist = mystr.split(",")
 # new_list = []

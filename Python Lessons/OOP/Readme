@@ -1,0 +1,29 @@
+It might seem like encapsulation and abstraction are the same because they both deal with hiding or simplifying things, but they are actually different concepts that work together in programming. Let's clarify the difference:
+
+Encapsulation:
+Focus:
+Encapsulation is about hiding the internal details and protecting the internal state of an object.
+It bundles the data (attributes) and the methods (functions) that operate on the data into a single unit, called a class, and hides the details from the outside world.
+Purpose:
+The main goal is to control access to the data. This means that only the methods inside the class can directly interact with the data. External code can’t change the data unless it’s allowed by the methods in the class.
+Example (Toy Car):
+The toy car’s internal parts (gears, motor) are encapsulated inside the car. You can’t access them directly; you can only interact with the car through its outer parts, like buttons or a remote.
+Abstraction:
+Focus:
+
+Abstraction is about simplifying complexity by providing a simple interface or interaction method for the user, without exposing the underlying complex details.
+It focuses on what an object does, rather than how it does it.
+Purpose:
+
+The main goal is to simplify usage by highlighting only the necessary features, so you don’t need to know or deal with the complex inner workings.
+Example (Toy Car):
+
+The toy car’s remote control offers a few simple buttons to move the car. You don’t need to understand how the remote communicates with the car or how the car's motor works—this complexity is abstracted away.
+How They Work Together:
+Encapsulation hides the inner details and protects the data within an object (like hiding the motor inside the toy car).
+Abstraction provides a simple interface for interacting with the object (like using the remote control to move the car).
+In summary, encapsulation is about hiding the "how" (the inner workings), while abstraction is about simplifying the "what" (the way you interact with the object). They are different but complementary concepts that together make programming easier and more secure.
+
+An abstract method is a method that is declared in a class but doesn’t have any implementation in that class. It’s like a blueprint for a method that subclasses must implement
+
+Encapsulation is more of a concept or principle rather than a specific type of method. It’s about how you design your classes and methods to protect and manage the internal state of an object.

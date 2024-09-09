@@ -515,3 +515,33 @@
 # print(new)
 
 # ---------------------------------------------------------------------------------
+# Find the Largest Number in a List
+# numbers = [3, 1, 4, 1, 5]
+
+# def solution(num):
+#     largest = 0
+#     for i in numbers:
+#         if i > largest:
+#             largest = i
+#     print(largest)
+
+# solution(numbers)
+
+# ---------------------------------------
+
+# Count Vowels in a String
+
+# vowels = ['a','e','i','o','u']
+
+# def count_vowels(vowels,word):
+#     count = 0
+#     for i in word:
+#         if i not in vowels:
+#             pass
+#         else:
+#             count += 1
+#     print(count)
+
+# count_vowels(vowels,"helloo")
+
+# -------------------------------

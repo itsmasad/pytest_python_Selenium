@@ -545,3 +545,38 @@
 # count_vowels(vowels,"helloo")
 
 # -------------------------------
+
+# Merge Two Sorted Lists
+
+# Write a function that takes two sorted lists and merges them into a single sorted list.
+# Example: merge_sorted([1, 3, 5], [2, 4, 6]) should return [1, 2, 3, 4, 5, 6].
+
+# def merge_sorted(list1,list2):
+#     new_list = sorted(list1) + sorted(list2)
+#     print(sorted(new_list))
+
+
+# merge_sorted([1, 5, 3], [2, 4, 6]) 
+
+
+
+# Find the Intersection of Two Lists
+
+# Write a function that returns the intersection of two lists (elements that are common to both).
+# Example: intersect([1, 2, 3], [2, 3, 4]) should return [2, 3].
+
+# def intersect(list1,list2):
+#     new = []
+#     for i in list1:
+#         if i in list2:
+#             new.append(i)
+#     print(new)
+
+
+# intersect([1, 2, 3], [2, 3, 4])
+
+# Find Missing Number in Array
+
+# Write a function that finds the missing number in a given list of integers from 1 to n.
+# Example: find_missing([1, 2, 4, 5, 6]) should return 3.
+

@@ -27,3 +27,17 @@ In summary, encapsulation is about hiding the "how" (the inner workings), while 
 An abstract method is a method that is declared in a class but doesn’t have any implementation in that class. It’s like a blueprint for a method that subclasses must implement
 
 Encapsulation is more of a concept or principle rather than a specific type of method. It’s about how you design your classes and methods to protect and manage the internal state of an object.
+
+
+Polymorphism
+
+Compile-time Polymorphism (Static Polymorphism):
+
+Method Overloading: Allows multiple methods with the same name but different parameters within the same class, enabling methods to perform different tasks based on input types or numbers.
+Operator Overloading: Enables custom definitions for operators (e.g., +, -, *) to work with user-defined types, providing flexibility in how operations are performed on those types.
+
+
+Runtime Polymorphism (Dynamic Polymorphism):
+
+Method Overriding: Occurs when a subclass provides a specific implementation of a method that is already defined in its superclass, allowing for dynamic method invocation based on the object's runtime type.
+Duck Typing: Emphasizes the capability of an object to perform an action rather than its specific type, promoting flexibility and integration based on behavior rather than exact type matching.

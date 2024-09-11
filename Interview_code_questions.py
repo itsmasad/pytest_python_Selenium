@@ -575,8 +575,22 @@
 
 # intersect([1, 2, 3], [2, 3, 4])
 
+# counting the lower and upper case 
+
+# word = "Wellcome To Code"
+# lower = []
+# capital = []
+
+# for i in word:
+#     if i.isupper():
+#         capital.append(i)
+#     else:
+#         lower.append(i)
+
+# print(f'lower: {lower}')
+# print(f'Capital: {capital}')
+
 # Find Missing Number in Array
 
 # Write a function that finds the missing number in a given list of integers from 1 to n.
 # Example: find_missing([1, 2, 4, 5, 6]) should return 3.
-

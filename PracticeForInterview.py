@@ -22,17 +22,36 @@
 # print(lower_Case.title())
 # print(lower_Case.capitalize())
 
-input_value = "Abcdad"
+# input_value = "Abcdad"
 
-def solution(n):
-    newN = n.lower()
-    seen = []
-    notSeen = []
-    for i in newN:
-        if i in seen:
-            notSeen.append(i)
-        else:
-            seen.append(i)
-    return notSeen
+# def solution(n):
+#     newN = n.lower()
+#     seen = []
+#     notSeen = []
+#     for i in newN:
+#         if i in seen:
+#             notSeen.append(i)
+#         else:
+#             seen.append(i)
+#     return notSeen
 
-print(solution(input_value))
+# print(solution(input_value))
+
+# list_number = [0,1,2,3,0,4,0,5,6]
+# def solution(n):
+#     for i in n:
+#         if i == 0:
+#             n.remove(i)
+#             n.append(i)
+#     return n
+# print(solution(list_number))
+
+# def reverse_words(input):
+#     toList = input.split()
+#     reverse = toList[::-1]
+#     toString = ' '.join(reverse)
+#     print(toString)   
+
+# reverse_words("sky is blue")
+
+list = [1, 2, 2, 2, 3, 3, 3, 4, 5, 5, 6, 6, 7]

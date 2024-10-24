@@ -26,6 +26,7 @@
 
 #     return sorted(str1) == sorted(str2)
 
+
 # word1 = "silent"
 # word2 = "listen"
 

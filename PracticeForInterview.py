@@ -3,5 +3,5 @@
 # new_string = old_string[::-1]
 # print(new_string)
 
-import random
-print(random.randint(1,100))
+# import random
+# print(random.uniform(0.1,99))

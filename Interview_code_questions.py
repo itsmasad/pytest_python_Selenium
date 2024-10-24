@@ -153,7 +153,6 @@
 
 # print(new_list)
 
-
 # get the sum of two ingiter
 
 # integer = 29

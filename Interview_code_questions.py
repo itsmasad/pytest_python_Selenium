@@ -121,8 +121,8 @@
 
 # reverse_words("sky is blue")
 
-# if there is number only one time in the list print this
-# Original list with duplicate and unique elements
+# # if there is number only one time in the list print this
+# # Original list with duplicate and unique elements
 # list = [1, 2, 2, 2, 3, 3, 3, 4, 5, 5, 6, 6, 7]
 
 # # Initialize an empty list to store elements that occur only once

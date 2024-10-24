@@ -35,24 +35,24 @@
 # else:
 #     print("not an anagram")
 
-# import pytest
+import pytest
 
-# @pytest.fixture(scope="function")
-# def setUp():
-#     print("This is setup")
+@pytest.fixture(scope="function")
+def setUp():
+    print("This is setup")
 
 
-# def test_data():
-#     data = [
-#         ("Asad@gmail.com","Asad_Password"),
-#         ("Naveed@gmail.com","Naveed_Password"),
-#         ("Uzair@gmail.com","Uzair_password")
-#     ]
-#     return data
+def test_data():
+    data = [
+        ("Asad@gmail.com","Asad_Password"),
+        ("Naveed@gmail.com","Naveed_Password"),
+        ("Uzair@gmail.com","Uzair_password")
+    ]
+    return data
 
-# @pytest.mark.parametrize("username,password",test_data())
-# def test_Login(username,password):
-#     print(username,password)
+@pytest.mark.parametrize("username,password",test_data())
+def test_Login(username,password):
+    print(username,password)
 
 # from selenium import webdriver
 # from selenium.webdriver.common.action_chains import ActionChains

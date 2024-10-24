@@ -54,13 +54,15 @@
 
 # reverse_words("sky is blue")
 
-list = [1, 2, 2, 2, 3, 3, 3, 4, 5, 5, 6, 6, 7]
+# list = [1, 2, 2, 2, 3, 3, 3, 4, 5, 5, 6, 6, 7]
 
-def numbOnce(input):
-    newList = []
-    for i in input:
-        if input.count(i) == 1:
-            newList.append(i)
-    print(newList)
+# def numbOnce(input):
+#     newList = []
+#     for i in input:
+#         if input.count(i) == 1:
+#             newList.append(i)
+#     print(newList)
 
-numbOnce(list)
+# numbOnce(list)
+
+# checking how many times the alphbet is there

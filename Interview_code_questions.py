@@ -154,6 +154,27 @@
 
 # print(new_list)
 
+# # Another way
+# def solution(input):
+#     toList = []
+#     visited = []
+#     not_visited = []
+#     FinalResult = []
+#     for i in input:
+#         if i.isalpha():
+#             toList.append(i)
+    
+#     for i in toList:
+#         if i in visited:
+#             not_visited.append(i)
+#         else:
+#             visited.append(i)
+#             FinalResult.append(f'{toList.count(i)}:{i}')
+#     print(FinalResult)
+
+# solution(mystr)
+
+
 # get the sum of two ingiter
 
 # integer = 29

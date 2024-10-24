@@ -16,3 +16,8 @@
 #         print('Not anagram')
 
 # solution('Silent','Listen')
+
+lower_Case = "my name is asad and i am a software engineer"
+print(lower_Case.upper())
+print(lower_Case.title())
+print(lower_Case.capitalize())

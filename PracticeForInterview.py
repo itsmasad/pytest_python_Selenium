@@ -1,79 +1,68 @@
-# # String Reverse
-# old_string = "Hello"
-# new_string = old_string[::-1]
-# print(new_string)
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver import ActionChains
+from selenium.webdriver.support.ui import Select, Keys, WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
-# import random
-# print(random.uniform(0.1,99))
+driver = webdriver.Chrome()
+driver.get('')
 
-# Checking anagram
-# def solution(str1,str2):
-#     new1 = sorted(str1.lower())
-#     new2 = sorted(str2.lower())
-#     if new1==new2:
-#         print('Anagram')
-#     else:
-#         print('Not anagram')
+driver.maximize_window()
+element = driver.find_element(By.CLASS_NAME,'element')
+element.click()
+element.clear()
+driver.title
+driver.current_url
+# screenshot
+driver.save_screenshot()
+# Iframes
+driver.switch_to.frame(element)
+driver.switch_to.frame(0)
+driver.switch_to.default_content()
+# Alerts
+driver.switch_to.alert.accept()
+driver.switch_to.alert.dismiss()
+driver.switch_to.alert.send_keys('Test')
+text = driver.switch_to.alert.text
+element.send_keys("This is Text")
+# Mouse & Keyboard
+action = ActionChains(driver)
+action.move_to_element(element).perform()
+action.click(element).perform()
+action.context_click(element).perform()
+action.click(element).key_down(Keys.TAB).send_keys('This is the content').key_up(Keys.TAB).perform()
+# JavaScript
+driver.execute_script('')
 
-# solution('Silent','Listen')
+# Dropdown select
+select = Select(element)
+select.select_by_index(0)
+select.select_by_value('value')
+select.select_by_visible_text('Text')
+select.deselect_by_index(0)
+select.deselect_all()
 
-# lower_Case = "my name is asad and i am a software engineer"
-# print(lower_Case.upper())
-# print(lower_Case.title())
-# print(lower_Case.capitalize())
+# forword back and refresh
+driver.back()
+driver.forward()
+driver.refresh()
 
-# input_value = "Abcdad"
+# Window & Tab Handling
+parent = driver.current_window_handle
+handles = driver.window_handles
+driver.switch_to.window(handles[1])
+driver.switch_to.window(parent)
 
-# def solution(n):
-#     newN = n.lower()
-#     seen = []
-#     notSeen = []
-#     for i in newN:
-#         if i in seen:
-#             notSeen.append(i)
-#         else:
-#             seen.append(i)
-#     return notSeen
+# Waits
+driver.implicitly_wait(4)
 
-# print(solution(input_value))
+# Explicit Wait
+WebDriverWait(driver,5).until(
+    EC.visibility_of_all_elements_located((By.ID,'Locator'))
+)
 
-# list_number = [0,1,2,3,0,4,0,5,6]
-# def solution(n):
-#     for i in n:
-#         if i == 0:
-#             n.remove(i)
-#             n.append(i)
-#     return n
-# print(solution(list_number))
-
-# def reverse_words(input):
-#     toList = input.split()
-#     reverse = toList[::-1]
-#     toString = ' '.join(reverse)
-#     print(toString)   
-
-# reverse_words("sky is blue")
-
-# list = [1, 2, 2, 2, 3, 3, 3, 4, 5, 5, 6, 6, 7]
-
-# def numbOnce(input):
-#     newList = []
-#     for i in input:
-#         if input.count(i) == 1:
-#             newList.append(i)
-#     print(newList)
-
-# numbOnce(list)
-
-# checking how many times the alphbet is there
-# integer = 29
-
-# print(sum(map(int,list(str(integer)))))
-
-def solution(n):
-    for i in range(1,n+1):
-        space = ' '*(n-i)
-        asterisk = '*'*(i*2-1)
-        print(space+asterisk)
-
-solution(5)
+# Fluent Wait
+WebDriverWait(driver,5,2).until(
+    EC.presence_of_element_located((By.TAG_NAME,'Locator'))
+)

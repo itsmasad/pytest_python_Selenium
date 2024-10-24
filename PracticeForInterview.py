@@ -17,7 +17,22 @@
 
 # solution('Silent','Listen')
 
-lower_Case = "my name is asad and i am a software engineer"
-print(lower_Case.upper())
-print(lower_Case.title())
-print(lower_Case.capitalize())
+# lower_Case = "my name is asad and i am a software engineer"
+# print(lower_Case.upper())
+# print(lower_Case.title())
+# print(lower_Case.capitalize())
+
+input_value = "Abcdad"
+
+def solution(n):
+    newN = n.lower()
+    seen = []
+    notSeen = []
+    for i in newN:
+        if i in seen:
+            notSeen.append(i)
+        else:
+            seen.append(i)
+    return notSeen
+
+print(solution(input_value))

@@ -66,3 +66,14 @@
 # numbOnce(list)
 
 # checking how many times the alphbet is there
+# integer = 29
+
+# print(sum(map(int,list(str(integer)))))
+
+def solution(n):
+    for i in range(1,n+1):
+        space = ' '*(n-i)
+        asterisk = '*'*(i*2-1)
+        print(space+asterisk)
+
+solution(5)

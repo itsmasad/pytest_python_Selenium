@@ -206,6 +206,15 @@
 
 # piramid(5)
 
+# Another way 
+# def piramid(n):
+#     asterist = '*'
+#     space = ' '
+#     for i in range(1,n+1):
+#         print(f'{space*(n-i)}{asterist*(i*2-1)}')
+
+# piramid(5)
+
 # it will get the value from the left for array a, and from the right for value b
 # then concatinating them and comparing if the value is less or greater then variable k
 # a = [1,2,3]

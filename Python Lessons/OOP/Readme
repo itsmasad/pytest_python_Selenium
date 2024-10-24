@@ -6,19 +6,21 @@ Encapsulation is about hiding the internal details and protecting the internal s
 It bundles the data (attributes) and the methods (functions) that operate on the data into a single unit, called a class, and hides the details from the outside world.
 Purpose:
 The main goal is to control access to the data. This means that only the methods inside the class can directly interact with the data. External code can’t change the data unless it’s allowed by the methods in the class.
+
 Example (Toy Car):
 The toy car’s internal parts (gears, motor) are encapsulated inside the car. You can’t access them directly; you can only interact with the car through its outer parts, like buttons or a remote.
+
 Abstraction:
 Focus:
-
 Abstraction is about simplifying complexity by providing a simple interface or interaction method for the user, without exposing the underlying complex details.
 It focuses on what an object does, rather than how it does it.
 Purpose:
 
 The main goal is to simplify usage by highlighting only the necessary features, so you don’t need to know or deal with the complex inner workings.
-Example (Toy Car):
 
+Example (Toy Car):
 The toy car’s remote control offers a few simple buttons to move the car. You don’t need to understand how the remote communicates with the car or how the car's motor works—this complexity is abstracted away.
+
 How They Work Together:
 Encapsulation hides the inner details and protects the data within an object (like hiding the motor inside the toy car).
 Abstraction provides a simple interface for interacting with the object (like using the remote control to move the car).

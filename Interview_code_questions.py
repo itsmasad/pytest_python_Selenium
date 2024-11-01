@@ -69,7 +69,6 @@ def test_Login(username,password):
 # driver.switch_to.window()
 
 
-
 # lower_Case = "my name is asad and i am a software engineer"
 # # To lower case
 # print(lower_Case.lower())

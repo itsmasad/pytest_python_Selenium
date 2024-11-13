@@ -234,6 +234,26 @@ def test_Login(username,password):
 
 # solution(a,b,k)
 
+# Approach 2 : with only one array
+
+# a = [1,2,3]
+# b = [1,2,3]
+# k = 30
+# def solution(a,b,c):
+#     b = b[::-1]
+#     less = 0
+#     more = 0
+#     for i in range(0,len(a)):
+#         concat = str(a[i]) + str(b[i])
+#         if int(concat) < k:
+#             less += 1
+#         else:
+#             more += 1
+#     print(f'less then {k}: "{less}", more then {k}: "{more}"')
+        
+    
+# solution(a,b,k)
+
 # # Checking palindrome 
 # def check_palindrome(input):
 #     # Remove non-alphanumeric characters and convert to lowercase

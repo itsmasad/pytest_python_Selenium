@@ -371,6 +371,7 @@ def test_Login(username,password):
 
 # ----------------------------------------------------
 
+#              ** Consecutive Numbers ***
 # To get the 5 consecutive number of any number, i.e. 850
 
 # def solution(n):
@@ -390,7 +391,7 @@ def test_Login(username,password):
 
 # solution(851)
 
-# Another way of doing this
+# Approach 2 ** Consecutive Numbers
 
 # def solution(n):
 #     # Initialize a flag to check if a solution is found
@@ -420,6 +421,42 @@ def test_Login(username,password):
 
 # # Example usage
 # solution(850)
+
+
+# Approach 3 ** Consecutive Numbers
+
+# Set the target number to be checked against the sum
+num = 850
+
+# Define a function to find consecutive numbers that sum up to n
+def solution(n):
+    # Loop through numbers from 1 up to (but not including) n
+    for i in range(1, n):
+        # Set the limit to the current number i plus 5 (to get a range of 5 consecutive numbers)
+        limit = i + 5
+        
+        # Initialize a count to accumulate the sum of numbers
+        count = 0
+        
+        # Initialize an empty list to store the consecutive numbers
+        numbers = []
+        
+        # Loop through numbers starting from i up to the limit
+        for i in range(i, limit):
+            # Add the current number to the list of consecutive numbers
+            numbers.append(i)
+            
+            # Add the current number to the running total (count)
+            count += i
+        
+        # Check if the sum of this set of consecutive numbers matches n
+        if count == n:
+            # If a match is found, print the sum and the list of numbers
+            print(count)
+            print(numbers)
+        
+# Call the solution function with the value 35
+solution(35)
 
 # ----------------------------------------------
 

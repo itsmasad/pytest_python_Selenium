@@ -10,7 +10,7 @@ driver = webdriver.Chrome()
 driver.get("https://demo.automationtesting.in/Windows.html")
 driver.maximize_window()
 driver.title
-driver.implicitly_wait
+driver.implicitly_wait(4)
 parent = driver.current_window_handle
 newtab = driver.find_elements(By.XPATH,"//*[@target='_blank']")
 newtab[0].click()
@@ -24,8 +24,5 @@ driver.switch_to.window(parent)
 # it will not be able to relocate this this is why it will send the steel exeption
 newtab[0].click()
 
-
-
 time.sleep(3)
 driver.close()
-
